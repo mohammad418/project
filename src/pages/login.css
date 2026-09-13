@@ -1,0 +1,248 @@
+.loginpage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  box-sizing: border-box;
+  background-color: #0e1921;
+  overflow: hidden;
+  font-family: inherit;
+  padding: 20px 0;
+}
+
+.log-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  filter: brightness(0.35) blur(2px);
+}
+
+.form {
+  position: relative;
+  z-index: 10;
+  width: 90%;
+  max-width: 380px;
+  background: rgba(14, 25, 33, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.form .titr {
+  display: block;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.log-second {
+  font-size: clamp(12px, 0.9vw, 13px);
+  color: #94a3b8;
+  margin: 0 0 16px 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.username,
+.password {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  direction: rtl;
+  margin-bottom: 10px;
+}
+
+.username::placeholder,
+.password::placeholder {
+  color: #94a3b8;
+}
+
+.username:focus,
+.password:focus {
+  border-color: rgb(17, 145, 255);
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 8px rgba(17, 145, 255, 0.4);
+}
+
+.remember-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 2px 0 8px 0;
+  gap: 8px;
+}
+
+.remember-box label {
+  font-size: 13px;
+  color: #cbd5e1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.remember-box input[type="checkbox"] {
+  accent-color: rgb(17, 145, 255);
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.login input[type="button"],
+.login input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(17, 145, 255);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 14px rgba(17, 145, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.login input[type="button"]:hover,
+.login input[type="submit"]:hover {
+  background-color: #0c7de2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(17, 145, 255, 0.6);
+}
+
+.login input[type="button"]:active,
+.login input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+.login a {
+  color: #38bdf8;
+  font-size: 12.5px;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: color 0.2s ease;
+}
+
+.login a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.error-box {
+  width: 100%;
+  background-color: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+  color: #fca5a5;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.success-box {
+  width: 100%;
+  background-color: rgba(34, 197, 94, 0.2);
+  border: 1px solid #22c55e;
+  color: #86efac;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.backkey {
+  width: 100%;
+  height: 38px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: all 0.25s ease;
+}
+
+.backkey:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    width: 92%;
+    padding: 18px 18px;
+    border-radius: 14px;
+  }
+
+  .form .titr {
+    font-size: 18px;
+  }
+
+  .log-second {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .username,
+  .password,
+  .login input[type="button"] {
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .login a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .form {
+    width: 95%;
+    padding: 16px 14px;
+  }
+
+  .form .titr {
+    font-size: 17px;
+  }
+}

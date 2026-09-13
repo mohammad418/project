@@ -1,0 +1,91 @@
+
+.users-page {
+  padding: 24px;
+}
+
+.user-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-form h3 {
+  margin: 0 0 16px;
+  color: #1e293b;
+}
+
+.users-page .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.users-page .form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #475569;
+  font-weight: bold;
+}
+
+.users-page .form-grid input,
+.users-page .form-grid select {
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #f8fafc;
+}
+
+.users-page .form-grid input:focus,
+.users-page .form-grid select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.users-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.users-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: bold;
+}
+
+.users-table tr:hover td {
+  background: #f1f5f9;
+}
+
+.self-row td {
+  background: #f0fdf4;
+}
+
+.self-tag {
+  font-size: 11px;
+  color: #16a34a;
+  margin-right: 6px;
+}

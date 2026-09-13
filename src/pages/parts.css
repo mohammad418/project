@@ -1,0 +1,71 @@
+.form-parts {
+  max-width: 580px;
+  text-align: right;
+}
+
+.titr-parts {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.body-parts {
+  line-height: 1.9;
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  text-align: justify;
+  direction: rtl;
+}
+
+
+.parts-page {
+  padding: 24px;
+}
+
+.part-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.part-form h3 {
+  margin: 0 0 16px;
+  color: #1e293b;
+}
+
+.parts-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.parts-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.parts-table th,
+.parts-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.parts-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: bold;
+}
+
+.parts-table tr:hover td {
+  background: #f1f5f9;
+}
+
+.low-stock {
+  color: #dc2626;
+  font-weight: bold;
+}
