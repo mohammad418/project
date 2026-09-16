@@ -1,12 +1,8 @@
 services:
   - type: web
     name: garage-backend
-    runtime: node
+    runtime: docker
     plan: free
-    envVars:
-      - key: NODE_VERSION
-        value: "22.22.0"
-    rootDir: backend
-    buildCommand: "cd .. && npm install --build-from-source=sqlite3"
-    startCommand: "node index.js"
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     healthCheckPath: /api/health
